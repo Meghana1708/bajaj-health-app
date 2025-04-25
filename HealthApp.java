@@ -46,7 +46,7 @@ public class HealthApp implements CommandLineRunner {
         Map<Integer, List<Integer>> graph = new HashMap<>();
         for (Map<String, Object> user : users) {
             int id = (int) user.get("id");
-            List<Integer> follows = (List<Integer>) user.get("follows ");
+            List<Integer> follows = (List<Integer>) user.get("follows");
             graph.put(id, follows);
         }
 
